@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ex1
+  labels:
+    name: ex1
+spec:
+  containers:
+  - name: runner
+    image: alpine
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    # コードはこのインデント位置で挿入
+
+  # restartPolicy: コンテナ終了時の再起動の扱い(Neverとすれば一回だけ動くことになります)
+  restartPolicy: Never
