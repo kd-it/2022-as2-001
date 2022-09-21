@@ -1,3 +1,4 @@
+# 問題1用マニフェスト(空欄を埋める形式)
 apiVersion: v1
 kind: Pod
 metadata:
